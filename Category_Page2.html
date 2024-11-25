@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <header>
+    <div class="top-bar"> 
+        <p>welcom to worldwide Cart+!</p>
+    </div>
+
+    <div class="nav-bar">   
+        <a href="index.html">
+            <abbr title="Go To The HomePage"><img src="Images\Cart-removebg-preview.png" alt="Cart++"></abbr>
+        </a>
+        <div class="nav-items">
+            <a href="Category_Page.html">
+                <label>
+                    <img src="Images\Category-icon-removebg-preview.png" alt="Categories"> Categories
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="#">
+                <label>
+                    <img src="Images\Offers-removebg-preview.png" alt="All Offers"> All Offers
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="SellerDashboard.html">
+                <label>
+                    <img src="Images\Dashboard-removebg-preview.png" alt="Seller's dashboard"> Seller's dashboard
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Costumer.html">
+                <label>
+                    <img src="Images\user-removebg-preview.png" alt="User Page"> User Page
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Cart1.html">
+                <label>
+                    <img src="Images\shopping-cart-removebg-preview.png" alt="Cart"> Cart
+                </label>
+            </a>
+        </div>
+		
+    </div>
+</header>
+
+    <br><br><br><br>
+
+    <div id="product-page-container">
+        <div class="filter-categories">
+            <div class="filter-sort">
+                 <select id="sort-options" onchange="sortProducts()">
+                    <optgroup label="Price">
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </optgroup>
+                    <optgroup label="Name">
+                        <option value="name-asc">Name: A-Z</option>
+                        <option value="name-desc">Name: Z-A</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div class="categories-CP">
+                <a href="Category_Page.html">Electronics</a>
+                <a href="#">Beauty</a>
+                <a href="Category_Page3.html">Furniture</a>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="product-grid" id="product-grid">
+            <div class="product-card" data-name="Yves Saint Laurent" data-price="470.4">
+                <img src="Images/Discount5.jpg" alt="Product Image" class="product-image2">
+                <h6>Yves Saint Laurent Libre Eau de Parfum <br> 150ml</h6>
+                <div class="price">
+                    <span class="old-price">588 SAR</span>
+                    <span class="new-price">470.4 SAR</span>
+                </div>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="Airwrap Multi Styler" data-price="1814.75">
+                <img src="Images/Discount6.jpg" alt="Product Image" class="product-image2">
+                <h6>Airwrap Multi Styler Complete Long Bright Nickel and Rich Copper</h6>
+                <div class="price">
+                    <span class="old-price">2135 SAR</span>
+                    <span class="new-price">1814.75 SAR</span>
+                </div>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="ATTITUDE Oceanly" data-price="139">
+                <img src="Images\Beauty3" alt="Product Image" class="product-image2">
+                <h6>ATTITUDE Oceanly Plastic-Free Lightweight Bronzer Stick</h6>
+                <span class="Or-price">139 SAR</span>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="Beauty Of Joseon" data-price="50">
+                <img src="Images/Beauty4.jpeg" alt="Product Image" class="product-image2">
+                <h6>Beauty Of Joseon Sunscreen Cream With Rice Extract And Probiotics 50ml</h6>
+                <span class="Or-price">50 SAR</span>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="SKIN1004 Serum" data-price="120">
+                <img src="Images/Beauty5.png" alt="Product Image" class="product-image2">
+                <h6>SKIN1004 Madagascar Centella Asiatica Ampoule Facial Serum 3.38 fl.oz (100ml)</h6>
+                <span class="Or-price">120 SAR</span>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="No.7 Bonding Oil" data-price="145">
+                <img src="Images/Beauty6.jpeg" alt="Product Image" class="product-image2">
+                <h6>No.7 Bonding Oil, hair treatment oils <br> 30ml </h6>
+                <span class="Or-price">145 SAR</span>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="KIKO Milano" data-price="62">
+                <img src="Images/Beauty7.png" alt="Product Image" class="product-image2">
+                <h6>KIKO Milano 3D Hydra Lip-gloss 21 Brun Rose, 6.5 ml</h6>
+                <span class="Or-price">62 SAR</span>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+
+            <div class="product-card" data-name="MAYBELLINE Mascara" data-price="40">
+                <img src="Images/Beauty8.png" alt="Product Image" class="product-image2">
+                <h6>MAYBELLINE New York, Lash Sensational Sky High Mascara</h6>
+                <span class="Or-price">40 SAR</span>
+                <div class="quantity-control1">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-button">Add</button>
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+
+   
+    <script src="CategoryPageScript.js"></script>
+
+    <br><br><br><br>
+
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="Images\Cart++-removebg-preview.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><img src="Images\whatsapp-icon-removebg-preview.png" alt="WhatsApp Icon">+966000000000</li>
+                <li><img src="Images\Call-icon-removebg-preview.png" alt="Phone Icon">+966000000000</li>
+                <li><img src="Images\Email-removebg-preview.png" alt="Email Icon"><a href="mailto:CartPlus@gmail.com">CartPlus@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="Category_Page.html">Electronics</a></li>
+                <li><a href="Category_Page2.html">Beauty</a></li>
+                <li><a href="Category_Page3.html">Furniture</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Cart+. All rights reserved</p>
+    </div>
+</footer>
+<script src="HomePageScript.js"></script>
+</body>
+</html>

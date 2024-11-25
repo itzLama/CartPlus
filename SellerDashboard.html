@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seller Dashboard</title>
+    <style>
+         .products {
+            display:flex;
+            flex-direction: row ;
+            width: 70% ;
+            overflow: auto;
+            gap :  3em ;
+            justify-content : space-between;
+            align-content: space-between;
+            padding-top: 5em;
+        }
+        .product {
+            border: 1px solid hsl(0, 0%, 0%) ;
+            height: 300;
+            width: 195px;
+            border-radius: 5%;
+            padding: 0.5em ;
+        }
+        .sideBar{
+            position: absolute;
+            top: 30% ;
+            right: 5em;
+            padding: 5px;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	
+	background-color: white;
+    color: #000;
+	
+}
+
+
+
+body.dark-theme {
+    background-color:#333; 
+    color: #fff; 
+}
+
+
+
+/* Header Styles */
+/* .top-bar {
+    background-color: #6CA4C5;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+} */
+
+.top-bar {
+    background-color: #6CA4C5;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+#theme-toggle-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#theme-toggle-button:hover {
+    background-color: #ddd;
+}
+
+
+body.dark-theme #theme-toggle-button {
+    background-color: #666;
+    color: #fff;
+    border-color: #ccc;
+}
+
+body.dark-theme #theme-toggle-button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-bar h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.nav-bar img {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-items img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nav-items label {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.divider {
+    border-left: 1px solid #ccc;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    padding: 40px 20px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+}
+
+.footer-section li img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+	padding-bottom: 20px;
+    font-size: 12px;
+    color: white;
+	background-color: #6CA4C5;
+}
+
+  .footer-section a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Home_Page Container Styles */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+	
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.hero {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+	color: #666;
+	
+}
+
+.hero-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.section-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+	border-bottom: 1px solid grey ; 
+    padding-bottom: 20px; 
+}
+
+.section-head h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.section-head a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+}
+
+.items {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+	justify-content:center;
+}
+
+.items p{
+	color:#000 ;
+}
+
+.review{
+	width: 500px;
+    height: 150px;
+	
+}
+
+
+.item{
+	width: 400px;
+    height: 470px;
+	
+}
+
+.item h3{
+	color:#000 ;
+}
+
+.item p{
+	color:#000 ;
+}
+
+.item, .category, .review {
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 250px;
+   border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.image-Review {
+    width: 50px;
+    height: 50px;
+   border-radius: 10px;
+    margin-bottom: 10px;
+	
+}
+
+
+
+.rating {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FFD700;
+}
+
+.category a {
+    text-decoration: none;
+	color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.review-details {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    font-size: 14px;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="top-bar"> 
+        <p>welcom to worldwide Cart+!</p>
+    </div>
+
+    <div class="nav-bar">   
+        <a href="index.html">
+            <abbr title="Go To The HomePage"><img src="Images\Cart-removebg-preview.png" alt="Cart++"></abbr>
+        </a>
+        <div class="nav-items">
+            <a href="Category_Page.html">
+                <label>
+                    <img src="Images\Category-icon-removebg-preview.png" alt="Categories"> Categories
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="#">
+                <label>
+                    <img src="Images\Offers-removebg-preview.png" alt="All Offers"> All Offers
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="SellerDashboard.html">
+                <label>
+                    <img src="Images\Dashboard-removebg-preview.png" alt="Seller's dashboard"> Seller's dashboard
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Costumer.html">
+                <label>
+                    <img src="Images\user-removebg-preview.png" alt="User Page"> User Page
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Cart1.html">
+                <label>
+                    <img src="Images\shopping-cart-removebg-preview.png" alt="Cart"> Cart
+                </label>
+            </a>
+        </div>
+		
+    </div>
+</header>
+
+
+
+    <div class = "Selproducts">
+<!--
+        <div class="product">
+            <img class="product-image" src="Images/product1.jpeg" alt="Ergonomic Gaming Chair" width="190" height="280" > 
+            <label><strong>Ergonomic Gaming Chair</strong></label>
+            <p class="Descreption" >This high-quality gaming chair offers an ergonomic design with a padded backrest and adjustable armrests for optimal comfort during long sessions. Its sleek black and white color scheme adds a modern touch to any setup.</p>
+            <p><strong>700SAR</strong></p>
+        </div>
+
+        <div class="product">
+            <img class="product-image" src="Images/product2.jpeg" alt="Sleek Nesting End Tables" width="190" height="280" >
+            <label><strong>Sleek Nesting End Tables</strong></label>
+            <p class="Descreption">These modern nesting end tables feature a black marble-look top and gold metal frame for a stylish, streamlined look.</p>
+            <p> <strong>600SAR</strong></p>
+        </div>
+
+        <div class="product">
+            <img class="product-image" src="Images/product3.jpeg" alt="Sleek Minimalist Nightstand" width="190" height="280" >
+            <label><strong>Sleek Minimalist Nightstand</strong></label>
+            <p class="Descreption">This streamlined nightstand features a simple, minimalist design with a smooth, neutral-toned surface and a single drawer for storage.</p>
+            <p> <strong>600SAR</strong></p>
+        </div>
+
+        <div class="product">
+            <img class="product-image" src="Images/product4.jpeg" alt="Modern Bar Stool" width="190" height="280" > 
+            <label><strong>Modern Bar Stool</strong></label>
+            <p class="Descreption">This contemporary bar stool combines a sleek black seat with natural wood legs, creating a modern, streamlined design that suits a variety of interior styles.</p>
+            <p><strong> 299SAR</strong></p>
+        </div>
+
+        <div class="product">
+            <img class="product-image" src="Images/product5.jpeg" alt="Minimalist Marble-Look Side Table" width="190" height="280" >
+            <label><strong>Minimalist Marble-Look Side Table</strong></label>
+            <p class="Descreption">This modern side table features a sleek, minimalist design with a beige surface that has a sophisticated marble-inspired look.</p>
+            <p>  <strong>800SAR</strong></p>
+        </div>
+    -->
+       
+     </div>
+
+    <br>
+
+    <div class="sideBar">
+        <a href="Add-product.html"><button id="AddProductButton">Add Product</button></a><br><br>
+        <a href="Offer.html"><button>Make/Delete Offer</button></a>
+    </div>
+	
+<br><br><br><br><br><br>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="Images\Cart++-removebg-preview.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><img src="Images\whatsapp-icon-removebg-preview.png" alt="WhatsApp Icon">+966000000000</li>
+                <li><img src="Images\Call-icon-removebg-preview.png" alt="Phone Icon">+966000000000</li>
+                <li><img src="Images\Email-removebg-preview.png" alt="Email Icon"><a href="mailto:CartPlus@gmail.com">CartPlus@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="Category_Page.html">Electronics</a></li>
+                <li><a href="Category_Page2.html">Beauty</a></li>
+                <li><a href="Category_Page3.html">Furniture</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Cart+. All rights reserved</p>
+    </div>
+</footer>
+
+<script src="HomePageScript.js"></script>
+
+<script src="script2.js" ></script>
+</body>
+
+
+
+</html>
+
+

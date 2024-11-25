@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+    <title>Offer</title>
+</head>
+
+
+
+<body>
+    
+
+    <header>
+    <div class="top-bar"> 
+        <p>welcom to worldwide Cart+!</p>
+    </div>
+
+    <div class="nav-bar">   
+        <a href="index.html">
+            <abbr title="Go To The HomePage"><img src="Images\Cart-removebg-preview.png" alt="Cart++"></abbr>
+        </a>
+        <div class="nav-items">
+            <a href="Category_Page.html">
+                <label>
+                    <img src="Images\Category-icon-removebg-preview.png" alt="Categories"> Categories
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="#">
+                <label>
+                    <img src="Images\Offers-removebg-preview.png" alt="All Offers"> All Offers
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="SellerDashboard.html">
+                <label>
+                    <img src="Images\Dashboard-removebg-preview.png" alt="Seller's dashboard"> Seller's dashboard
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Costumer.html">
+                <label>
+                    <img src="Images\user-removebg-preview.png" alt="User Page"> User Page
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Cart1.html">
+                <label>
+                    <img src="Images\shopping-cart-removebg-preview.png" alt="Cart"> Cart
+                </label>
+            </a>
+        </div>
+		
+    </div>
+</header>
+    
+
+
+<div class = "seller">
+<h1>Available Offer</h1>
+<form action="" method="Post" id="MyForm"> 
+
+    <div id="offersList">
+        <div  class="offers">
+            <input type="checkbox" class ="offer" id="offer1"> 
+            <img src="Images/offer1.png"  alt="" width="90" height="80" class="MyPic" > 
+            <label for="offer1" class="OfferLabel1"> Get 20% OFF For Your First Order!  </label> 
+            <div class="offer-desc">
+            <p id = "Desc">get a discount of all products for your first order </p>
+            </div>
+        </div>
+        <div  class="offers">
+            <input type="checkbox" class ="offer" id="offer2">
+            <img src="Images/offer2.png"  alt="" width="90" height="80"  class="MyPic"> 
+            <label for="offer2" class="OfferLabel1">Free Shipping on Orders Over $50  </label>
+            <div class="offer-desc">
+            <p id = "Desc">get a free shipping fee for orders over 50$ </p>
+            </div>
+        </div>
+        <div  class="offers" >
+            <input type="checkbox" class ="offer" id="offer3">
+            <img src="Images/offer3.jpeg" alt="" width="90" height="80"  class="MyPic"> 
+            <label for="offer3" class="OfferLabel1"> Summer Sale - Save 30%  </label>
+            <div class="offer-desc">
+            <p id = "Desc">get a 30% discount of all products </p>
+            </div>
+        </div>
+        <div  class="offers">
+            <input type="checkbox" class ="offer" id="offer4">
+            <img src="Images/offer4.jpeg" alt="" width="90" height="80"  class="MyPic"> 
+            <label for="offer4" class="OfferLabel1">  Buy One product, Get One 50% Off!  </label>
+            <div class="offer-desc">
+            <p id = "Desc">get one product and have one with with 50% discount </p>
+            </div>
+        </div>
+        <div  class="offers">
+            <input type="checkbox" class ="offer" id="offer5">
+            <img src="Images/offer5.jpg"  alt="" width="90" height="80"  class="MyPic"> 
+            <label for="offer5" class="OfferLabel1">  Weekend Only: Save 30% on all items!   </label>
+            <div class="offer-desc">
+            <p id = "Desc">get a 30% discount of all products  </p>
+            </div>
+        </div>
+    </div>
+
+  <br>
+<div id="deletoffer">
+    <button id="DeleteOffer">Delete Offer</button>
+</div>
+
+</form>
+
+<hr>
+
+<h1>Add New Offer</h1>
+<form action="" method="Post" id="MySeconedForm"> 
+    <input type="file" name="offerImage" id="addImage">
+
+    <div class="contanor">
+<div id="addNewOffer">
+   <label>Offer Label:</label><input type="text" maxlength="24" name="offerLabel" id="offersLabel">  <br><br>
+   <label>Descreption:<textarea rows="4" cols="50" name="offerDescreption" id="offerDescription"></textarea></label>  <br>
+</div>
+<button id="AddO">Add Offer</button>
+</div>
+</form>
+<br><br><br><br><br>
+
+</div>
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="Images\Cart++-removebg-preview.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><img src="Images\whatsapp-icon-removebg-preview.png" alt="WhatsApp Icon">+966000000000</li>
+                <li><img src="Images\Call-icon-removebg-preview.png" alt="Phone Icon">+966000000000</li>
+                <li><img src="Images\Email-removebg-preview.png" alt="Email Icon"><a href="mailto:CartPlus@gmail.com">CartPlus@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="Category_Page.html">Electronics</a></li>
+                <li><a href="Category_Page2.html">Beauty</a></li>
+                <li><a href="Category_Page3.html">Furniture</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Cart+. All rights reserved</p>
+    </div>
+</footer>
+
+<script src="HomePageScript.js"></script>
+<script src="script4.js" ></script>
+</body>
+ 
+</html>
