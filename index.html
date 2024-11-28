@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+
+<header>
+    <div class="top-bar"> 
+        <p>welcom to worldwide Cart+!</p>
+		<button id="theme-toggle-button">Switch Theme</button>
+    </div>
+
+    <div class="nav-bar">   
+        <a href="index.html">
+            <abbr title="Go To The HomePage"><img src="Images\Cart-removebg-preview.png" alt="Cart++"></abbr>
+        </a>
+        <div class="nav-items">
+            <a href="Category_Page.html">
+                <label>
+                    <img src="Images\Category-icon-removebg-preview.png" alt="Categories"> Categories
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="#">
+                <label>
+                    <img src="Images\Offers-removebg-preview.png" alt="All Offers"> All Offers
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="SellerDashboard.html">
+                <label>
+                    <img src="Images\Dashboard-removebg-preview.png" alt="Seller's dashboard"> Seller's dashboard
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Costumer.html">
+                <label>
+                    <img src="Images\user-removebg-preview.png" alt="User Page"> User Page
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Cart1.html">
+                <label>
+                    <img src="Images\shopping-cart-removebg-preview.png" alt="Cart"> Cart
+                </label>
+            </a>
+        </div>
+		
+    </div>
+</header>
+
+
+<br> 
+
+
+<!-- Display Current Week Date -->
+<div id="current-week-date"></div>
+
+
+<br>
+
+
+<div class="container">
+   
+   <!-- Hero Section -->
+    <section class="hero">
+        <img src="Images/TheLogo.jpg" alt="Hero Image" class="hero-image">
+        <h5><q>Our Vision: To be the first choice for online shopping, offering <em>quality</em>, <em>variety</em>, and <em>affordable prices</em> to meet the needs of our customers worldwide.</q></h5>
+    </section>
+
+
+<br><br>
+
+
+    <!-- Discount Section -->
+   <section class="discount">
+        <div class="section-head">
+            <h2>Discount</h2>
+            <a href="#" onclick="showAllDiscounts(event)">View All</a>
+        </div>
+        
+		
+		<div class="items">
+            
+			<div class="item">
+                <a href="Category_Page.html"><img src="Images/Discount1.jpg" alt="Discount Image" class="image-placeholder"></a>
+                <h3>Apple Watch</h3>
+                <p>Sleek design with advanced tracking features. <br><br> <strong>Discount %10</strong></p>
+                
+            </div>
+            
+			
+			<div class="item">
+                <a href="Category_Page3.html"><img src="Images/Furniture3.jpg" alt="Discount Image" class="image-placeholder"></a>
+                <h3>Dining Chair</h3>
+                <p>Comfortable and stylish, perfect for dining spaces.<br><br><strong>Discount %25</strong></p>
+                
+            </div>
+            
+			
+			<div class="item">
+                <a href="Category_Page3.html"><img src="Images/Furniture4.jpg.png" alt="Discount Image" class="image-placeholder"></a>
+                <h3>Table Lamp</h3>
+                <p>Elegant lighting that adds a cozy ambiance to any room.<br><br><strong>Discount %50</strong></p>
+                
+            </div>
+            
+			
+			<div class="item">
+                <a href="Category_Page.html"><img src="Images/Discount4.jpg" alt="Discount Image" class="image-placeholder"></a>
+                <h3>Apple Airpods Max</h3>
+                <p>High-quality sound and comfort.<br><br><strong>Discount %10</strong></p>
+                
+            </div>
+            
+			
+			<div class="item hidden">
+                <a href="Category_Page2.html"><img src="Images/Discount5.jpg" alt="Discount Image" class="image-placeholder"></a>
+                <h3>Yves Saint Laurent Perfume</h3>
+                <p>Luxury fragrance for elegance.<br><br><strong>Discount %20</strong></p>
+                
+            </div>
+        
+		   <div class="item hidden">
+               <a href= "Category_Page2.html"> <img src="Images/Discount6.jpg" alt="Discount Image" class="image-placeholder"></a>
+                <h3>Dyson Hair Styling Kit</h3>
+                <p>Professional styling at home.<br><br><strong>Discount %15</strong></p>
+               
+            </div>
+
+
+	  </div>
+    </section>
+
+<br><br><br><br>
+
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="section-head">
+            <h2>Categories</h2>
+            <a href="Category_Page.html">View All</a>
+        </div>
+        <div class="items">
+            <div class="category">
+                <img src="Images/Category1.jpg" alt="Category Image" class="image-placeholder">
+                <a href="Category_Page.html"><strong>Electronics</strong></a>
+            </div>
+            <div class="category">
+                <img src="Images/Category2.jpg" alt="Category Image" class="image-placeholder">
+                <a href="Category_Page2.html"><strong>Beauty</strong></a>
+            </div>
+            <div class="category">
+                <img src="Images/Category3.jpg" alt="Category Image" class="image-placeholder">
+                <a href="Category_Page3.html"><strong>Furniture</strong></a>
+            </div>
+        </div>
+    </section>
+
+
+<br><br><br><br>
+
+
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+    <div class="section-head">
+        <h2>Reviews</h2>
+        <a href="#">View All</a>
+    </div>
+    <div class="items">
+        <div class="review" id="review1" onmouseenter="showReviewDetails(this)" onmouseleave="hideReviewDetails(this)">
+            <img src="Images/Review1.jpg" alt="Review Image" class="image-Review">
+            <p>Great product! It meets all my expectations.</p>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="review" id="review2" onmouseenter="showReviewDetails(this)" onmouseleave="hideReviewDetails(this)">
+            <img src="Images/Review2.jpg" alt="Review Image" class="image-Review">
+            <p>Excellent quality and reasonable price.</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="review" id="review3" onmouseenter="showReviewDetails(this)" onmouseleave="hideReviewDetails(this)">
+            <img src="Images/Review3.jpg" alt="Review Image" class="image-Review">
+            <p>Best purchase I've made this year!</p>
+            <div class="rating">★★★★★</div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+
+
+
+
+<br><br>
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="Images\Cart++-removebg-preview.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><img src="Images\whatsapp-icon-removebg-preview.png" alt="WhatsApp Icon">+966000000000</li>
+                <li><img src="Images\Call-icon-removebg-preview.png" alt="Phone Icon">+966000000000</li>
+                <li><img src="Images\Email-removebg-preview.png" alt="Email Icon"><a href="mailto:CartPlus@gmail.com">CartPlus@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="Category_Page.html">Electronics</a></li>
+                <li><a href="Category_Page2.html">Beauty</a></li>
+                <li><a href="Category_Page3.html">Furniture</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Cart+. All rights reserved</p>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="HomePageScript.js"></script>
+
+
+
+
+</body>
+</html>
+

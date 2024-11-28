@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Evaluations</title>
+    <link rel="stylesheet" href="styles.css">
+      </head>
+<body>
+
+
+<header>
+    <div class="top-bar"> 
+        <p>welcom to worldwide Cart+!</p>
+		
+    </div>
+
+    <div class="nav-bar">   
+        <a href="index.html">
+            <abbr title="Go To The HomePage"><img src="Images\Cart-removebg-preview.png" alt="Cart++"></abbr>
+        </a>
+        <div class="nav-items">
+            <a href="Category_Page.html">
+                <label>
+                    <img src="Images\Category-icon-removebg-preview.png" alt="Categories"> Categories
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="#">
+                <label>
+                    <img src="Images\Offers-removebg-preview.png" alt="All Offers"> All Offers
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="SellerDashboard.html">
+                <label>
+                    <img src="Images\Dashboard-removebg-preview.png" alt="Seller's dashboard"> Seller's dashboard
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Costumer.html">
+                <label>
+                    <img src="Images\user-removebg-preview.png" alt="User Page"> User Page
+                </label>
+            </a>
+            <div class="divider"></div>
+            <a href="Cart1.html">
+                <label>
+                    <img src="Images\shopping-cart-removebg-preview.png" alt="Cart"> Cart
+                </label>
+            </a>
+        </div>
+		
+    </div>
+</header>
+
+<br><br><br><br>
+    <form action="" method="post">
+        <select name="order" id="select">
+                     <option value="default"> Select an Order </option>
+            <option>#01DG6434</option>
+            <option>#02AF4310</option>
+            <option>#03WX9299</option>
+        </select>
+        
+        <select name="products" id="select1"> 
+                      <option value="default"> Select a Product </option>
+            <option>Apple Watch</option>
+            <option>Dining Chair</option>
+            <option>Dyson Hair Styling Kit</option>
+        </select>
+        <br><br><br><br>
+                  <img id="product-image" class="AppleWatch-image">
+
+        <div class="stars">
+            <label id="feedback-label2" for="entry">Let us know your thoughts! Your feedback helps us improve</label>
+            <br>
+              <div id="rating-stars">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+        </div>
+            <br>
+            <textarea name="entry" rows="10" cols="64" id="entry"></textarea>
+            <br><br>
+            <input type="submit" value="Submit" id="submit-button">
+        </div>
+    </form>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="Images\Cart++-removebg-preview.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><img src="Images\whatsapp-icon-removebg-preview.png" alt="WhatsApp Icon">+966000000000</li>
+                <li><img src="Images\Call-icon-removebg-preview.png" alt="Phone Icon">+966000000000</li>
+                <li><img src="Images\Email-removebg-preview.png" alt="Email Icon"><a href="mailto:CartPlus@gmail.com">CartPlus@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="Category_Page.html">Electronics</a></li>
+                <li><a href="Category_Page2.html">Beauty</a></li>
+                <li><a href="Category_Page3.html">Furniture</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Cart+. All rights reserved</p>
+    </div>
+</footer>
+<script src="HomePageScript.js"></script>
+<script src="Product-evaluation.js"></script>
+</body>
+</html>
